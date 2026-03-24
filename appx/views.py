@@ -7,3 +7,7 @@ def aboutus(request):
     return render(request,'aboutus.html')
 def contactus(request):
     return render(request,'contactus.html')
+def services(request):
+    return render(request,'services.html')
+def gallery(request):
+    return render(request,'gallery.html')
