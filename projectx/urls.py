@@ -19,6 +19,23 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('appx.urls'))
-
+    path('',include('appx.urls')),
+    path('services/',include('appx.urls')),
+        path('services/about/gallery/',include('appx.urls')),
+        path('services/contact/about/',include('appx.urls')),
+        path('services/gallery/contact/',include('appx.urls')),
+    path('gallery/',include('appx.urls')),
+        path('gallery/services/about/',include('appx.urls')),
+        path('gallery/about/contact/',include('appx.urls')),
+        path('gallery/contact/services/',include('appx.urls')),
+    path('contact/',include('appx.urls')),
+        path('contact/about/gallery/',include('appx.urls')),
+        path('contact/gallery/services/',include('appx.urls')),
+        path('contact/services/about/',include('appx.urls')),
+    path('about/',include('appx.urls')),
+        path('about/gallery/services/',include('appx.urls')),
+        path('about/contact/gallery/',include('appx.urls')),
+        path('about/services/contact/',include('appx.urls')),
+        
+    
 ]
